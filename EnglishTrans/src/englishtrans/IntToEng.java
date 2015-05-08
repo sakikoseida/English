@@ -14,8 +14,28 @@ public class IntToEng {
 
     // 数値を英訳する変換するメソッド
     public static String translateEng(int n) {
-    	String a[] = {"zero","one","two","three","four","five","six","seven","eight","nine","ten"};
-        return a[n];
+    	String a[] = {"zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","tewlve","thirteen","fourteen","fifteen","sixtenn","seventeen","eighteen","nineteen"};
+        String b[] = {"twenty","thirty","forty","fifty","sixty","seventy","eighty","ninty"};
+    	//return a[n];
+    	if(0<=n && n<=19){
+    		return a[n];
+    	}
+    	else if(n>=20 && n<=99){
+    		int ten = n/10 -2;
+    		int one = n%10;
+    		
+    		if(one == 0){
+    			String trans = (b[ten]);
+    			return trans;
+    		}    		
+    		else{
+    		String trans = (b[ten]+" "+a[one]);
+    			return trans;
+    		}
+    	}
+    	else{
+    		return"one hundred";
+    	}
     }
 }
 

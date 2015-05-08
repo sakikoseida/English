@@ -18,8 +18,22 @@ public class IntToEngTest {
 
 	@Test
 	public void ‚É‚¶‚ã‚¤‚¢‚¿‚ðtwentyone‚É•ÏŠ·() {
-		String expected = "ten";
-		String actual = IntToEng.translateEng(10);
+		String expected = "twenty one";
+		String actual = IntToEng.translateEng(21);
 		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void ‚æ‚ñ‚¶‚ã‚¤‚ðforty‚É•ÏŠ·(){
+		String expected = "forty";
+		String actual = IntToEng.translateEng(40);
+		assertThat(actual,is(expected));
+	}
+	
+	@Test
+	public void ‚Ð‚á‚­‚ðonehundred‚É•ÏŠ·(){
+		String expected = "one hundred";
+		String actual = IntToEng.translateEng(100);
+		assertThat(actual,is(expected));
 	}
 }
