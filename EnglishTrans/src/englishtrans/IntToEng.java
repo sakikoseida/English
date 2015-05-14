@@ -17,7 +17,11 @@ public class IntToEng {
     	String a[] = {"zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
         String b[] = {"twenty","thirty","forty","fifty","sixty","seventy","eighty","ninty"};
     	//return a[n];
-    	if(0<=n && n<=19){
+    	return judge(n, a, b);
+    }
+
+	private static String judge(int n, String[] a, String[] b) {
+		if(0<=n && n<=19){
     		return a[n];
     	}
     	else if(n>=20 && n<=99){
@@ -36,6 +40,6 @@ public class IntToEng {
     	else{
     		return"one hundred";
     	}
-    }
+	}
 }
 
