@@ -14,7 +14,7 @@ public class IntToEng {
 
     // 数値を英訳する変換するメソッド
     public static String translateEng(int n) {
-    	String a[] = {"zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","tewlve","thirteen","fourteen","fifteen","sixtenn","seventeen","eighteen","nineteen"};
+    	String a[] = {"zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
         String b[] = {"twenty","thirty","forty","fifty","sixty","seventy","eighty","ninty"};
     	//return a[n];
     	if(0<=n && n<=19){
